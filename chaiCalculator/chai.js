@@ -1,14 +1,18 @@
-function calculateBodaFare(){
-    let kmInput = prompt("Unafika wapi Mkubwa? kilometer ngapi?: ")
-    let distanceInKm = Number(kmInput);
-    let baseFare = 50;
-    let chargePerKm =15;
-    let totalFare =baseFare + (distanceInKm * chargePerKm);
+function calculateChaiIngredients(){
+    let input = prompt("Karibu! How many cups of Chai Bora would you like to make? ");
+    let numberOfCups = Number(input);
+    let water = 200 * numberOfCups;
+    let milk = 150 * numberOfCups;
+    let teaLeaves = 1 * numberOfCups;
+    let sugar = 2 * numberOfCups;
 
-    console.log("Uko kwote? Io ni " + distanceInKm + "km:")
-    console.log("Ukikalia Pikipiki:" + " KES" + baseFare)
-    console.log("Mpaka Uko:" + " KES" + totalFare)
-    console.log("Total:" + " KES" + totalFare)
-    console.log("Panda Pikipiki!")
+console.log("To make " + numberOfCups + " cups of Kenyan Chai, you will need");
+console.log("Water: " + water + " ml");
+console.log("Milk: " + milk + " ml");
+console.log("Tea Leaves (Majani): " + teaLeaves + " tablespoons");
+console.log("Sugar (Sukari): " + sugar + " tablespoons");
+
+console.log("Enjoy you Chai Bora!")
 }
-calculateBodaFare();    
+
+calculateChaiIngredients();
